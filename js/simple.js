@@ -1,4 +1,4 @@
-const container = document.querySelector('.container')
+const container = document.querySelector('.map-wrapper')
 const img = document.querySelector('.map')
 
 let zoom = 1
@@ -16,11 +16,6 @@ container.addEventListener('wheel', e => {
 	img.style.transform = `scale(${zoom})`
 })
 
-// SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg
-// Join Facebook Group ==> https://www.facebook.com/groups/html.css.javascript.albtechhh
-
-// SUBSCRIBE ==> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg
-// Join Facebook Group ==> https://www.facebook.com/groups/html.css.javascript.albtechhh
 
 let clicked = false
 let xAxis;

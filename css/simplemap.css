@@ -1,6 +1,6 @@
 
 
-.container {
+.map-wrapper {
 	width: 700px;
 	height: 700px;
 	position: relative;
@@ -13,3 +13,4 @@
 	position: absolute;
 	object-fit: contain;
 }
+
