@@ -31,9 +31,9 @@
 			</div>
 		</header>
 		
-		
-		<div class="container">
-			<img src="https://pub-5bfce5fed6a840f390af55baff8fad69.r2.dev/map.jpg" alt="" class="map">
+		<div id="map-wrapper">
+			<div class="container" id="map-container">
+				<img src="https://pub-5bfce5fed6a840f390af55baff8fad69.r2.dev/map.jpg" alt="" class="map" id="map-image">
 				<div class="mark spawn" data-popup="spawn">
 					<input type="checkbox" name="" id="">
 				</div>
@@ -72,30 +72,25 @@
 				</div>
 				<div class="mark kold-base" data-popup="kold-base">
 					<input type="checkbox" name="" id="">
-					<span></span>
 				</div>
 				<div class="mark nest-base" data-popup="nest-base">
 					<input type="checkbox" name="" id="">
-					<span></span>
 				</div>
 				<div class="mark fishing-spot" data-popup="fishing-spot">
 					<input type="checkbox" name="" id="">
-					<span></span>
 				</div>
 				<div class="mark golden-statue" data-popup="golden-statue">
 					<input type="checkbox" name="" id="">
-					<span></span>
 				</div>
 				<div class="mark volleyball" data-popup="volleyball">
 					<input type="checkbox" name="" id="">
-					<span></span>
 				</div>
 				<div class="mark scene" data-popup="scene">
 					<input type="checkbox" name="" id="">
-					<span></span>
 				</div>
+			</div>
 		</div>
-
+		
 		<div id="spawn" class="popup">
 			<div class="popup-content">
 				<span class="close">&times;</span>
@@ -286,6 +281,7 @@
 	</section>
 	<script src="js/script.js"></script>
 	<script src="js/interesting-place.js"></script>
+	<script src="https://unpkg.com/@panzoom/panzoom"></script>
 </body>
 
 </html>

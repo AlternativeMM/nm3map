@@ -14,3 +14,19 @@ document.querySelectorAll(".close").forEach(close => {
 		document.body.style.overflow = "";
 	});
 });
+
+const mapContent = document.getElementById('map-content');
+
+const panzoom = Panzoom(mapContent, {
+	maxScale: 5,
+	minScale: 1,
+	contain: 'outside',
+	pinchSpeed: 1,
+});
+
+// Зум колесом для ПК
+document.getElementById('map-wrapper')
+	.addEventListener('wheel', panzoom.zoomWithWheel);
+
+// Включение drag + pinch на мобильных
+panzoom.bind();
