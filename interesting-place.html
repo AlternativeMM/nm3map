@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/interesting-place.css" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<title>NM 3 MAP</title>
 </head>
 
@@ -29,7 +30,7 @@
 						<a href="" class="nav-link">
 							<p>Звичайна <br> мапа</p>
 						</a>
-						<a href="interesting-place.html" class="nav-link active">
+						<a href="interesting-place.html" class="nav-link active-page">
 							<p>Цікаві <br> місця</p>
 						</a>
 					</div>
@@ -100,7 +101,30 @@
 		<div id="spawn" class="popup">
 			<div class="popup-content">
 				<span class="close">&times;</span>
-				<img src="img/spawn.png" alt="" class="popup-img">
+				<div class="arrows-container">
+					<i class='bx bx-chevron-left prev' onclick="plusSlides(-1)"></i>
+					<i class='bx bx-chevron-right next' onclick="plusSlides(1)"></i>
+				</div>
+				<div class="dot-container" style="text-align:center">
+					<span class="dot dot-spawn" onclick="currentSlide(1)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(2)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(3)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(4)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(5)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(6)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(7)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(8)"></span>
+					<span class="dot dot-spawn" onclick="currentSlide(9)"></span>
+				</div>
+				<img src="img/spawn1.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn2.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn3.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn4.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn5.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn6.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn7.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn8.png" alt="" class="popup-img slide slide-spawn fade">
+				<img src="img/spawn9.png" alt="" class="popup-img slide slide-spawn fade">
 				<div class="popup-discription">
 					<h3>Spawn</h3>
 					<p>spawn spawn spawn</p>
@@ -110,7 +134,7 @@
 		<div id="alt-base" class="popup">
 			<div class="popup-content">
 				<span class="close">&times;</span>
-				<img src="img/alt-base.png" alt="" class="popup-img">
+				<img src="img/alt-base.png" alt="" class="popup-img fade">
 				<div class="popup-discription">
 					<h3>Замок "Хірошима"</h3>
 					<p>Японьский замок "Хірошима", база Alternativemm</p>
@@ -180,7 +204,22 @@
 		<div id="squid-game" class="popup">
 			<div class="popup-content">
 				<span class="close">&times;</span>
-				<img src="img/squid-game1.png" alt="" class="popup-img">
+				<div class="arrows-container">
+					<i class='bx bx-chevron-left prev' onclick="plusSlides(-1)"></i>
+					<i class='bx bx-chevron-right next' onclick="plusSlides(1)"></i>
+				</div>
+				<div class="dot-container" style="text-align:center">
+					<span class="dot dot-squid-game" onclick="currentSlide(1)"></span>
+					<span class="dot dot-squid-game" onclick="currentSlide(2)"></span>
+					<span class="dot dot-squid-game" onclick="currentSlide(3)"></span>
+					<span class="dot dot-squid-game" onclick="currentSlide(4)"></span>
+					<span class="dot dot-squid-game" onclick="currentSlide(5)"></span>
+				</div>
+				<img src="img/squid-game1.png" alt="" class="popup-img slide slide-squid-game fade">
+				<img src="img/squid-game2.png" alt="" class="popup-img slide slide-squid-game fade">
+				<img src="img/squid-game3.png" alt="" class="popup-img slide slide-squid-game fade">
+				<img src="img/squid-game4.png" alt="" class="popup-img slide slide-squid-game fade">
+				<img src="img/squid-game5.png" alt="" class="popup-img slide slide-squid-game fade">
 				<div class="popup-discription">
 					<h3>Гра в кальмара</h3>
 					<p>Локація з івенту NestPley "Гра в кальмара"</p>
@@ -250,7 +289,7 @@
 		<div id="vavilone" class="popup">
 			<div class="popup-content">
 				<span class="close">&times;</span>
-				<img src="img/vavilone.png" alt="" class="popup-img">
+				<img src="img/vavilone.png" alt="" class="popup-img fade">
 				<div class="popup-discription">
 					<h3>Вавілон</h3>
 					<p>Один з найбільших і найкрасивіших проектів на сервері. База comeblack_, VVhatislov3, Dobrogay, Mr_KiLLeR2015 та gayballslove</p>
@@ -287,6 +326,7 @@
 	</section>
 	<script src="js/script.js"></script>
 	<script src="js/interesting-place.js"></script>
+	<script src="js/slider.js"></script>
 	<script src="https://unpkg.com/@panzoom/panzoom"></script>
 </body>
 

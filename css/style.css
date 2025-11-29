@@ -130,7 +130,7 @@ header {
 	transition: 0.6s;
 }
 
-.active {
+.active-page {
 	text-decoration: underline;
 	font-size: 13px;
 	font-weight: 1000;
